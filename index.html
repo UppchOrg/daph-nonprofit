@@ -6,82 +6,59 @@
     <title>DAPH — Together We Rise</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@400;500;600&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+
     <!-- ===== NAVBAR ===== -->
     <header class="navbar" id="navbar">
       <div class="navbar__inner">
-        <a href="/" class="navbar__logo">
-          <img
-            src="assets/images/logo1.png"
-            alt="DAPH logo"
-            class="navbar__logo-img"
-          />
+        <a href="index.html" class="navbar__logo">
+          <img src="assets/images/logo1.png" alt="DAPH logo" class="navbar__logo-img" />
           DAPH
         </a>
 
         <nav class="navbar__nav" id="mainNav">
           <ul class="nav-list">
+
             <li class="nav-item has-dropdown">
-              <a href="#about" data-i18n="nav.about">About</a>
+              <a href="about.html" data-i18n="nav.about">About</a>
               <ul class="dropdown">
-                <li><a href="#about" data-i18n="nav.who">Who We Are</a></li>
-                <li>
-                  <a href="#about" data-i18n="nav.history">Our History</a>
-                </li>
-                <li>
-                  <a href="#about" data-i18n="nav.board">Board of Directors</a>
-                </li>
-                <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+                <li><a href="about.html#who" data-i18n="nav.who">Who We Are</a></li>
+                <li><a href="about.html#history" data-i18n="nav.history">Our History</a></li>
+                <li><a href="about.html#board" data-i18n="nav.board">Board of Directors</a></li>
               </ul>
             </li>
+
             <li class="nav-item has-dropdown">
-              <a href="#work" data-i18n="nav.work">Our Work</a>
+              <a href="news.html" data-i18n="nav.resources">Resources</a>
               <ul class="dropdown">
-                <li><a href="#work" data-i18n="nav.programs">Programs</a></li>
-                <li><a href="#work" data-i18n="nav.campaigns">Campaigns</a></li>
-                <li>
-                  <a href="#work" data-i18n="nav.initiatives">Initiatives</a>
-                </li>
+                <li><a href="news.html" data-i18n="nav.updates">Latest Updates</a></li>
+                <li><a href="news.html#press" data-i18n="nav.press">Press Releases</a></li>
+                <li><a href="news.html#reports" data-i18n="nav.reports">Reports</a></li>
               </ul>
             </li>
+
             <li class="nav-item has-dropdown">
-              <a href="#news" data-i18n="nav.resources">Resources</a>
+              <a href="volunteer.html" data-i18n="nav.action">Take Action</a>
               <ul class="dropdown">
-                <li>
-                  <a href="#news" data-i18n="nav.updates">Latest Updates</a>
-                </li>
-                <li>
-                  <a href="#news" data-i18n="nav.press">Press Releases</a>
-                </li>
-                <li><a href="#news" data-i18n="nav.reports">Reports</a></li>
-              </ul>
-            </li>
-            <li class="nav-item has-dropdown">
-              <a href="#action" data-i18n="nav.action">Take Action</a>
-              <ul class="dropdown">
-                <li>
-                  <a href="#action" data-i18n="nav.volunteer">Volunteer</a>
-                </li>
-                <li><a href="#action" data-i18n="nav.signup">Sign Up</a></li>
+                <li><a href="volunteer.html" data-i18n="nav.volunteer">Volunteer</a></li>
+                <li><a href="volunteer.html#signup" data-i18n="nav.signup">Sign Up</a></li>
                 <li><a href="donate.html" data-i18n="nav.donate">Donate</a></li>
               </ul>
             </li>
+
+            <li class="nav-item">
+              <a href="contact.html" data-i18n="nav.contact">Contact</a>
+            </li>
+
           </ul>
         </nav>
 
         <!-- Language Switcher -->
         <div class="lang-switcher" id="langSwitcher">
-          <button
-            class="lang-switcher__btn"
-            id="langBtn"
-            aria-label="Change language"
-          >
+          <button class="lang-switcher__btn" id="langBtn" aria-label="Change language">
             <span class="lang-switcher__globe">🌐</span>
             <span class="lang-switcher__current" id="langCurrent">EN</span>
             <span class="lang-switcher__arrow">▾</span>
@@ -95,12 +72,8 @@
         </div>
 
         <div class="navbar__cta">
-          <a href="donate.html" class="btn btn--outline" data-i18n="nav.donate"
-            >Donate</a
-          >
-          <a href="#action" class="btn btn--primary" data-i18n="cta.join"
-            >Join Us</a
-          >
+          <a href="donate.html" class="btn btn--outline" data-i18n="nav.donate">Donate</a>
+          <a href="volunteer.html" class="btn btn--primary" data-i18n="cta.join">Join Us</a>
         </div>
 
         <button class="hamburger" id="hamburger" aria-label="Toggle menu">
@@ -114,40 +87,21 @@
       <section class="hero" id="home">
         <div class="hero__bg"></div>
         <div class="hero__content">
-          <p class="hero__eyebrow" data-i18n="hero.eyebrow">
-            Disability Advocacy &amp; Public Health
-          </p>
+          <p class="hero__eyebrow" data-i18n="hero.eyebrow">Disability Advocacy &amp; Public Health</p>
           <h1 class="hero__heading">
             <span data-i18n="hero.heading">Together, we rise.</span><br />
-            <span class="hero__heading-accent" data-i18n="hero.heading2"
-              >Organized, we thrive.</span
-            >
+            <span class="hero__heading-accent" data-i18n="hero.heading2">Organized, we thrive.</span>
           </h1>
           <p class="hero__sub" data-i18n="hero.sub">
-            We invite every individual, no matter how isolated or powerless they
-            feel, to be part of a transformative journey toward equity and
-            justice.
+            We invite every individual, no matter how isolated or powerless they feel, to be part of a transformative journey toward equity and justice.
           </p>
           <div class="hero__actions">
-            <a
-              href="#work"
-              class="btn btn--primary btn--lg"
-              data-i18n="hero.btnWork"
-              >Our Work</a
-            >
-            <a
-              href="#action"
-              class="btn btn--outline-light btn--lg"
-              data-i18n="hero.btnInvolved"
-              >Get Involved</a
-            >
+            <a href="about.html" class="btn btn--primary btn--lg" data-i18n="hero.btnWork">Our Work</a>
+            <a href="volunteer.html" class="btn btn--outline-light btn--lg" data-i18n="hero.btnInvolved">Get Involved</a>
           </div>
         </div>
         <div class="hero__image">
-          <img
-            src="assets/images/daph3.png"
-            alt="DAPH community members marching together"
-          />
+          <img src="assets/images/daph3.png" alt="DAPH community members marching together" />
         </div>
         <div class="hero__scroll-hint">↓</div>
       </section>
@@ -156,72 +110,40 @@
     <!-- ===== TRIPLE CRISIS ===== -->
     <section class="crisis" id="issues">
       <div class="container">
-        <h2 class="section-heading" data-i18n="crisis.heading">
-          We face a triple crisis
-        </h2>
-        <p class="section-sub" data-i18n="crisis.sub">
-          People across the country face compounding challenges that demand
-          urgent, coordinated action from our communities.
-        </p>
+        <h2 class="section-heading" data-i18n="crisis.heading">We face a triple crisis</h2>
+        <p class="section-sub" data-i18n="crisis.sub">People across the country face compounding challenges that demand urgent, coordinated action from our communities.</p>
         <div class="crisis__grid">
           <div class="crisis__card">
             <div class="crisis__icon">⚕️</div>
             <h3 data-i18n="crisis.card1.title">Health Inequity</h3>
-            <p data-i18n="crisis.card1.body">
-              Millions lack access to adequate healthcare, especially people
-              with disabilities and low-income families living in underserved
-              communities.
-            </p>
+            <p data-i18n="crisis.card1.body">Millions lack access to adequate healthcare, especially people with disabilities and low-income families living in underserved communities.</p>
           </div>
           <div class="crisis__card">
             <div class="crisis__icon">🏘️</div>
             <h3 data-i18n="crisis.card2.title">Housing Insecurity</h3>
-            <p data-i18n="crisis.card2.body">
-              Rising costs and systemic barriers push vulnerable populations out
-              of safe, accessible housing — threatening stability and dignity.
-            </p>
+            <p data-i18n="crisis.card2.body">Rising costs and systemic barriers push vulnerable populations out of safe, accessible housing — threatening stability and dignity.</p>
           </div>
           <div class="crisis__card">
             <div class="crisis__icon">🤝</div>
             <h3 data-i18n="crisis.card3.title">Social Isolation</h3>
-            <p data-i18n="crisis.card3.body">
-              Disconnection and despair weaken civic life. People feel unheard,
-              unseen, and left behind by institutions that should serve them.
-            </p>
+            <p data-i18n="crisis.card3.body">Disconnection and despair weaken civic life. People feel unheard, unseen, and left behind by institutions that should serve them.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ===== ABOUT ===== -->
+    <!-- ===== ABOUT PREVIEW ===== -->
     <section class="about" id="about">
       <div class="container about__inner">
         <div class="about__text">
           <p class="label" data-i18n="about.label">About Us</p>
-          <h2 data-i18n="about.heading">
-            Building power for those left behind
-          </h2>
-          <p data-i18n="about.body1">
-            DAPH builds the power of people with disabilities and
-            under-resourced communities in urban, rural, and suburban areas to
-            win change through issue fights and elections. We are a coalition of
-            grassroots organizers united in the work of building a bigger "we."
-          </p>
-          <p data-i18n="about.body2">
-            Since our founding, we have won material improvements for millions —
-            including expanded healthcare access, accessible housing
-            protections, and stronger community mental health programs.
-          </p>
-          <a href="#about" class="btn btn--primary" data-i18n="about.btn"
-            >Learn More About Us</a
-          >
+          <h2 data-i18n="about.heading">Building power for those left behind</h2>
+          <p data-i18n="about.body1">DAPH builds the power of people with disabilities and under-resourced communities in urban, rural, and suburban areas to win change through issue fights and elections. We are a coalition of grassroots organizers united in the work of building a bigger "we."</p>
+          <p data-i18n="about.body2">Since our founding, we have won material improvements for millions — including expanded healthcare access, accessible housing protections, and stronger community mental health programs.</p>
+          <a href="about.html" class="btn btn--primary" data-i18n="about.btn">Learn More About Us</a>
         </div>
         <div class="about__image">
-          <img
-            src="assets/images/daph-community4.png"
-            alt="DAPH community members collaborating"
-            style="mix-blend-mode: lighten"
-          />
+          <img src="assets/images/daph-community4.png" alt="DAPH community members collaborating" style="mix-blend-mode: lighten" />
         </div>
       </div>
     </section>
@@ -229,139 +151,74 @@
     <!-- ===== CAMPAIGNS ===== -->
     <section class="campaigns" id="work">
       <div class="container">
-        <p class="label label--light" data-i18n="campaigns.label">
-          How We Fight
-        </p>
-        <h2
-          class="section-heading section-heading--light"
-          data-i18n="campaigns.heading"
-        >
-          Our Campaigns
-        </h2>
-        <p class="section-sub section-sub--light" data-i18n="campaigns.sub">
-          These are our core campaigns driving the change we aim for.
-        </p>
+        <p class="label label--light" data-i18n="campaigns.label">How We Fight</p>
+        <h2 class="section-heading section-heading--light" data-i18n="campaigns.heading">Our Campaigns</h2>
+        <p class="section-sub section-sub--light" data-i18n="campaigns.sub">These are our core campaigns driving the change we aim for.</p>
         <div class="campaigns__grid">
-          <a href="#work" class="campaign-card">
+          <a href="about.html" class="campaign-card">
             <div class="campaign-card__icon">♿</div>
             <h3 data-i18n="campaigns.card1.title">Disability Rights Now</h3>
-            <p data-i18n="campaigns.card1.body">
-              Fighting for full inclusion, accessibility, and equal opportunity
-              for people with disabilities.
-            </p>
-            <span class="campaign-card__link" data-i18n="campaigns.view"
-              >View Campaign →</span
-            >
+            <p data-i18n="campaigns.card1.body">Fighting for full inclusion, accessibility, and equal opportunity for people with disabilities.</p>
+            <span class="campaign-card__link" data-i18n="campaigns.view">View Campaign →</span>
           </a>
-          <a href="#work" class="campaign-card">
+          <a href="about.html" class="campaign-card">
             <div class="campaign-card__icon">🏥</div>
             <h3 data-i18n="campaigns.card2.title">Health Care for All</h3>
-            <p data-i18n="campaigns.card2.body">
-              Advocating for universal, affordable healthcare that leaves no one
-              behind.
-            </p>
-            <span class="campaign-card__link" data-i18n="campaigns.view"
-              >View Campaign →</span
-            >
+            <p data-i18n="campaigns.card2.body">Advocating for universal, affordable healthcare that leaves no one behind.</p>
+            <span class="campaign-card__link" data-i18n="campaigns.view">View Campaign →</span>
           </a>
-          <a href="#work" class="campaign-card">
+          <a href="about.html" class="campaign-card">
             <div class="campaign-card__icon">🏠</div>
             <h3 data-i18n="campaigns.card3.title">Housing Justice</h3>
-            <p data-i18n="campaigns.card3.body">
-              Ensuring safe, accessible, and affordable housing is a right — not
-              a privilege.
-            </p>
-            <span class="campaign-card__link" data-i18n="campaigns.view"
-              >View Campaign →</span
-            >
+            <p data-i18n="campaigns.card3.body">Ensuring safe, accessible, and affordable housing is a right — not a privilege.</p>
+            <span class="campaign-card__link" data-i18n="campaigns.view">View Campaign →</span>
           </a>
-          <a href="#work" class="campaign-card">
+          <a href="about.html" class="campaign-card">
             <div class="campaign-card__icon">🌱</div>
             <h3 data-i18n="campaigns.card4.title">Community Wellness</h3>
-            <p data-i18n="campaigns.card4.body">
-              Building mental health resources, social connection, and civic
-              infrastructure.
-            </p>
-            <span class="campaign-card__link" data-i18n="campaigns.view"
-              >View Campaign →</span
-            >
+            <p data-i18n="campaigns.card4.body">Building mental health resources, social connection, and civic infrastructure.</p>
+            <span class="campaign-card__link" data-i18n="campaigns.view">View Campaign →</span>
           </a>
         </div>
       </div>
     </section>
 
-    <!-- ===== NEWS ===== -->
+    <!-- ===== NEWS PREVIEW ===== -->
     <section class="news" id="news">
       <div class="container">
-        <p class="label" data-i18n="news.label">
-          Things you don't want to miss
-        </p>
+        <p class="label" data-i18n="news.label">Things you don't want to miss</p>
         <h2 class="section-heading" data-i18n="news.heading">Latest Updates</h2>
         <div class="news__grid">
           <article class="news-card news-card--featured">
             <div class="news-card__img news-card__img--1"></div>
             <div class="news-card__body">
-              <span class="news-card__tag" data-i18n="news.tag1"
-                >Press Release</span
-              >
-              <h3>
-                <a href="#news" data-i18n="news.story1.title"
-                  >DAPH Launches Statewide Accessibility Audit Initiative</a
-                >
-              </h3>
-              <p data-i18n="news.story1.body">
-                Our new program will assess accessibility gaps in public
-                buildings across 2 counties, pushing local governments to act.
-              </p>
-              <a href="#news" class="news-card__more" data-i18n="news.readMore"
-                >Read more →</a
-              >
+              <span class="news-card__tag" data-i18n="news.tag1">Press Release</span>
+              <h3><a href="news.html" data-i18n="news.story1.title">DAPH Launches Statewide Accessibility Audit Initiative</a></h3>
+              <p data-i18n="news.story1.body">Our new program will assess accessibility gaps in public buildings across 2 counties, pushing local governments to act.</p>
+              <a href="news.html" class="news-card__more" data-i18n="news.readMore">Read more →</a>
             </div>
           </article>
           <article class="news-card">
             <div class="news-card__img news-card__img--2"></div>
             <div class="news-card__body">
               <span class="news-card__tag" data-i18n="news.tag2">Updates</span>
-              <h3>
-                <a href="#news" data-i18n="news.story2.title"
-                  >Community Listening Sessions Begin This Spring</a
-                >
-              </h3>
-              <p data-i18n="news.story2.body">
-                Join us as we bring our team into 3 neighborhoods to hear
-                directly from residents about their most pressing needs.
-              </p>
-              <a href="#news" class="news-card__more" data-i18n="news.readMore"
-                >Read more →</a
-              >
+              <h3><a href="news.html" data-i18n="news.story2.title">Community Listening Sessions Begin This Spring</a></h3>
+              <p data-i18n="news.story2.body">Join us as we bring our team into 3 neighborhoods to hear directly from residents about their most pressing needs.</p>
+              <a href="news.html" class="news-card__more" data-i18n="news.readMore">Read more →</a>
             </div>
           </article>
           <article class="news-card">
             <div class="news-card__img news-card__img--3"></div>
             <div class="news-card__body">
-              <span class="news-card__tag" data-i18n="news.tag3"
-                >In The News</span
-              >
-              <h3>
-                <a href="#news" data-i18n="news.story3.title"
-                  >DAPH Members Testify Before City Council on Housing
-                  Accessibility</a
-                >
-              </h3>
-              <p data-i18n="news.story3.body">
-                Advocates brought powerful personal stories to city hall,
-                demanding enforcement of fair housing codes.
-              </p>
-              <a href="#news" class="news-card__more" data-i18n="news.readMore"
-                >Read more →</a
-              >
+              <span class="news-card__tag" data-i18n="news.tag3">In The News</span>
+              <h3><a href="news.html" data-i18n="news.story3.title">DAPH Members Testify Before City Council on Housing Accessibility</a></h3>
+              <p data-i18n="news.story3.body">Advocates brought powerful personal stories to city hall, demanding enforcement of fair housing codes.</p>
+              <a href="news.html" class="news-card__more" data-i18n="news.readMore">Read more →</a>
             </div>
           </article>
         </div>
         <div class="news__cta">
-          <a href="#news" class="btn btn--outline" data-i18n="news.viewAll"
-            >View All Updates</a
-          >
+          <a href="news.html" class="btn btn--outline" data-i18n="news.viewAll">View All Updates</a>
         </div>
       </div>
     </section>
@@ -371,30 +228,12 @@
       <div class="container cta-band__inner">
         <div>
           <h2 data-i18n="cta.heading">Ready to make a difference?</h2>
-          <p data-i18n="cta.sub">
-            Join thousands of advocates working toward a more just and
-            accessible world.
-          </p>
+          <p data-i18n="cta.sub">Join thousands of advocates working toward a more just and accessible world.</p>
         </div>
         <div class="cta-band__buttons">
-          <a
-            href="#action"
-            class="btn btn--primary btn--lg"
-            data-i18n="nav.volunteer"
-            >Volunteer</a
-          >
-          <a
-            href="#action"
-            class="btn btn--outline btn--lg"
-            data-i18n="cta.signUp"
-            >Sign Up for Updates</a
-          >
-          <a
-            href="donate.html"
-            class="btn btn--accent btn--lg"
-            data-i18n="nav.donate"
-            >Donate</a
-          >
+          <a href="volunteer.html" class="btn btn--primary btn--lg" data-i18n="nav.volunteer">Volunteer</a>
+          <a href="volunteer.html#signup" class="btn btn--outline btn--lg" data-i18n="cta.signUp">Sign Up for Updates</a>
+          <a href="donate.html" class="btn btn--accent btn--lg" data-i18n="nav.donate">Donate</a>
         </div>
       </div>
     </section>
@@ -403,13 +242,9 @@
     <footer class="footer" id="contact">
       <div class="container footer__inner">
         <div class="footer__brand">
-          <img src="assets/images/logo2.png" alt="" />
-          <a href="/" class="footer__logo">DAPH</a>
-          <p data-i18n="footer.brand">
-            DAPH builds the power of people with disabilities and
-            under-resourced communities to win change through issue campaigns
-            and elections.
-          </p>
+          <img src="assets/images/logo2.png" alt="DAPH" class="footer__logo-img" />
+          <a href="index.html" class="footer__logo">DAPH</a>
+          <p data-i18n="footer.brand">DAPH builds the power of people with disabilities and under-resourced communities to win change through issue campaigns and elections.</p>
           <div class="footer__socials">
             <a href="#" aria-label="Twitter">𝕏</a>
             <a href="#" aria-label="Instagram">📷</a>
@@ -419,47 +254,40 @@
         <div class="footer__col">
           <h4 data-i18n="nav.about">About</h4>
           <ul>
-            <li><a href="#about" data-i18n="nav.who">Who We Are</a></li>
-            <li><a href="#about" data-i18n="nav.history">Our History</a></li>
-            <li>
-              <a href="#about" data-i18n="nav.board">Board of Directors</a>
-            </li>
-            <li><a href="#contact" data-i18n="footer.careers">Careers</a></li>
-            <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
-          </ul>
-        </div>
-        <div class="footer__col">
-          <h4 data-i18n="nav.work">Our Work</h4>
-          <ul>
-            <li><a href="#work" data-i18n="nav.programs">Programs</a></li>
-            <li><a href="#work" data-i18n="nav.campaigns">Campaigns</a></li>
-            <li><a href="#work" data-i18n="nav.initiatives">Initiatives</a></li>
-            <li><a href="#work" data-i18n="footer.projects">Projects</a></li>
+            <li><a href="about.html#who" data-i18n="nav.who">Who We Are</a></li>
+            <li><a href="about.html#history" data-i18n="nav.history">Our History</a></li>
+            <li><a href="about.html#board" data-i18n="nav.board">Board of Directors</a></li>
+            <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
           </ul>
         </div>
         <div class="footer__col">
           <h4 data-i18n="nav.resources">Resources</h4>
           <ul>
-            <li><a href="#news" data-i18n="nav.updates">Latest Updates</a></li>
-            <li><a href="#news" data-i18n="nav.press">Press Releases</a></li>
-            <li><a href="#news" data-i18n="news.tag3">In The News</a></li>
-            <li><a href="#news" data-i18n="nav.reports">Reports</a></li>
+            <li><a href="news.html" data-i18n="nav.updates">Latest Updates</a></li>
+            <li><a href="news.html#press" data-i18n="nav.press">Press Releases</a></li>
+            <li><a href="news.html#reports" data-i18n="nav.reports">Reports</a></li>
           </ul>
         </div>
         <div class="footer__col">
           <h4 data-i18n="nav.action">Take Action</h4>
           <ul>
-            <li><a href="#action" data-i18n="nav.volunteer">Volunteer</a></li>
+            <li><a href="volunteer.html" data-i18n="nav.volunteer">Volunteer</a></li>
+            <li><a href="volunteer.html#signup" data-i18n="nav.signup">Sign Up</a></li>
             <li><a href="donate.html" data-i18n="nav.donate">Donate</a></li>
-            <li><a href="#action" data-i18n="nav.signup">Sign Up</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>More</h4>
+          <ul>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="contact.html">Careers</a></li>
+            <li><a href="donate.html">Support DAPH</a></li>
           </ul>
         </div>
       </div>
       <div class="footer__bottom">
         <div class="container footer__bottom-inner">
-          <p data-i18n="footer.copy">
-            ©2026 DAPH — Disability Advocacy &amp; Public Health
-          </p>
+          <p data-i18n="footer.copy">©2026 DAPH — Disability Advocacy &amp; Public Health</p>
           <div class="footer__legal">
             <a href="#" data-i18n="footer.privacy">Privacy Policy</a>
             <a href="#" data-i18n="footer.terms">Terms</a>

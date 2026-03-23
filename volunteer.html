@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Volunteer — DAPH</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/pages.css" />
+</head>
+<body>
+  <div id="navbar-placeholder"></div>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="page-hero__bg"></div>
+    <div class="container page-hero__content">
+      <p class="hero__eyebrow">Take Action</p>
+      <h1 class="page-hero__heading">Your time<br/><span>changes lives.</span></h1>
+      <p class="page-hero__sub">Volunteers are the backbone of everything we do. Whether you have 2 hours or 20, there's a place for you in this movement.</p>
+    </div>
+  </section>
+
+  <!-- WHY VOLUNTEER -->
+  <section class="page-section">
+    <div class="container">
+      <p class="label">Why Volunteer</p>
+      <h2 class="section-heading">What you'll be part of</h2>
+      <div class="volunteer-roles">
+        <div class="volunteer-role">
+          <div class="volunteer-role__icon">📢</div>
+          <h4>Community Outreach</h4>
+          <p>Go door-to-door, staff events, and connect with community members about our campaigns and resources.</p>
+          <span class="volunteer-role__time">2–4 hrs/week</span>
+        </div>
+        <div class="volunteer-role">
+          <div class="volunteer-role__icon">📋</div>
+          <h4>Administrative Support</h4>
+          <p>Help with data entry, communications, scheduling, and keeping our operations running smoothly.</p>
+          <span class="volunteer-role__time">Flexible</span>
+        </div>
+        <div class="volunteer-role">
+          <div class="volunteer-role__icon">⚖️</div>
+          <h4>Advocacy & Policy</h4>
+          <p>Research issues, write testimony, attend public hearings, and help hold officials accountable.</p>
+          <span class="volunteer-role__time">Project-based</span>
+        </div>
+        <div class="volunteer-role">
+          <div class="volunteer-role__icon">💻</div>
+          <h4>Digital & Communications</h4>
+          <p>Help with social media, graphic design, writing, and building our online presence.</p>
+          <span class="volunteer-role__time">Remote-friendly</span>
+        </div>
+        <div class="volunteer-role">
+          <div class="volunteer-role__icon">🎓</div>
+          <h4>Training & Education</h4>
+          <p>Facilitate workshops, lead training sessions, and help community members build their own skills.</p>
+          <span class="volunteer-role__time">Monthly</span>
+        </div>
+        <div class="volunteer-role">
+          <div class="volunteer-role__icon">🌐</div>
+          <h4>Translation Support</h4>
+          <p>Help us reach more community members by translating materials into Spanish, French, Haitian Creole, and more.</p>
+          <span class="volunteer-role__time">As needed</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SIGN UP FORM -->
+  <section class="page-section page-section--surface" id="signup">
+    <div class="container volunteer-layout">
+
+      <div class="volunteer-form-wrap">
+        <p class="label">Sign Up</p>
+        <h2>Ready to join us?</h2>
+        <p class="volunteer-form-intro">Fill out the form below and someone from our team will reach out within 3 business days to get you started.</p>
+
+        <form class="contact-form" id="volunteerForm" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="vFirstName">First Name <span class="required">*</span></label>
+              <input type="text" id="vFirstName" name="firstName" placeholder="Jane" required />
+            </div>
+            <div class="form-group">
+              <label for="vLastName">Last Name <span class="required">*</span></label>
+              <input type="text" id="vLastName" name="lastName" placeholder="Doe" required />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="vEmail">Email Address <span class="required">*</span></label>
+            <input type="email" id="vEmail" name="email" placeholder="jane@example.com" required />
+          </div>
+
+          <div class="form-group">
+            <label for="vPhone">Phone Number <span class="optional">(optional)</span></label>
+            <input type="tel" id="vPhone" name="phone" placeholder="(555) 000-0000" />
+          </div>
+
+          <div class="form-group">
+            <label for="vZip">ZIP Code <span class="required">*</span></label>
+            <input type="text" id="vZip" name="zip" placeholder="00000" required />
+          </div>
+
+          <div class="form-group">
+            <label>Areas of Interest <span class="optional">(select all that apply)</span></label>
+            <div class="checkbox-group">
+              <label class="checkbox-label"><input type="checkbox" name="interest" value="outreach" /><span>Community Outreach</span></label>
+              <label class="checkbox-label"><input type="checkbox" name="interest" value="admin" /><span>Administrative Support</span></label>
+              <label class="checkbox-label"><input type="checkbox" name="interest" value="advocacy" /><span>Advocacy & Policy</span></label>
+              <label class="checkbox-label"><input type="checkbox" name="interest" value="digital" /><span>Digital & Communications</span></label>
+              <label class="checkbox-label"><input type="checkbox" name="interest" value="training" /><span>Training & Education</span></label>
+              <label class="checkbox-label"><input type="checkbox" name="interest" value="translation" /><span>Translation Support</span></label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="vAvailability">Availability</label>
+            <select id="vAvailability" name="availability">
+              <option value="" disabled selected>When are you available?</option>
+              <option value="weekday-morning">Weekday Mornings</option>
+              <option value="weekday-afternoon">Weekday Afternoons</option>
+              <option value="weekday-evening">Weekday Evenings</option>
+              <option value="weekends">Weekends</option>
+              <option value="flexible">Fully Flexible</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="vMessage">Anything else you'd like us to know? <span class="optional">(optional)</span></label>
+            <textarea id="vMessage" name="message" rows="4" placeholder="Skills, languages spoken, accessibility needs..."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn--primary btn--lg" id="volunteerSubmit">
+            Sign Me Up
+          </button>
+
+          <div class="form-success" id="volunteerSuccess" style="display:none;">
+            <span>✅</span>
+            <div>
+              <strong>You're signed up!</strong>
+              <p>Thank you for stepping up. We'll be in touch within 3 business days.</p>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <div class="volunteer-sidebar">
+        <div class="volunteer-quote">
+          <blockquote>"Volunteering with DAPH changed how I see my own power. I came in thinking I was helping others — I left knowing we were building something together."</blockquote>
+          <cite>— Community Volunteer, 2024</cite>
+        </div>
+        <div class="volunteer-stats">
+          <div class="volunteer-stat">
+            <span class="volunteer-stat__num">200+</span>
+            <span class="volunteer-stat__label">Active Volunteers</span>
+          </div>
+          <div class="volunteer-stat">
+            <span class="volunteer-stat__num">5,000+</span>
+            <span class="volunteer-stat__label">Hours Last Year</span>
+          </div>
+          <div class="volunteer-stat">
+            <span class="volunteer-stat__num">15+</span>
+            <span class="volunteer-stat__label">Cities Reached</span>
+          </div>
+        </div>
+        <div class="volunteer-faq">
+          <h4>Common Questions</h4>
+          <div class="faq-item">
+            <strong>Do I need experience?</strong>
+            <p>Not at all. We train every volunteer and match you to roles that fit your skills and schedule.</p>
+          </div>
+          <div class="faq-item">
+            <strong>Can I volunteer remotely?</strong>
+            <p>Yes — many of our roles are fully remote, including digital support and translation.</p>
+          </div>
+          <div class="faq-item">
+            <strong>Is there a minimum commitment?</strong>
+            <p>No minimum — we welcome one-time event volunteers as much as long-term organizers.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div id="footer-placeholder"></div>
+
+  <script src="js/components.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/contact.js"></script>
+</body>
+</html>

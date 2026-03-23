@@ -26,6 +26,7 @@ const translations = {
       volunteer: "Volunteer",
       signup: "Sign Up",
       donate: "Donate",
+      contact: "Contact Us",
     },
     hero: {
       eyebrow: "Disability Advocacy & Public Health",
