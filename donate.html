@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Donate — DAPH</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/donate.css" />
+  </head>
+  <body>
+    <!-- ===== NAVBAR ===== -->
+    <header class="navbar" id="navbar">
+      <div class="navbar__inner">
+        <a href="index.html" class="navbar__logo">DAPH</a>
+
+        <nav class="navbar__nav" id="mainNav">
+          <ul class="nav-list">
+            <li class="nav-item has-dropdown">
+              <a href="index.html#about">About</a>
+              <ul class="dropdown">
+                <li><a href="index.html#about">Who We Are</a></li>
+                <li><a href="index.html#about">Our History</a></li>
+                <li><a href="index.html#about">Board of Directors</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+              </ul>
+            </li>
+            <li class="nav-item has-dropdown">
+              <a href="index.html#work">Our Work</a>
+              <ul class="dropdown">
+                <li><a href="index.html#work">Programs</a></li>
+                <li><a href="index.html#work">Campaigns</a></li>
+                <li><a href="index.html#work">Initiatives</a></li>
+              </ul>
+            </li>
+            <li class="nav-item has-dropdown">
+              <a href="index.html#news">Resources</a>
+              <ul class="dropdown">
+                <li><a href="index.html#news">Latest Updates</a></li>
+                <li><a href="index.html#news">Press Releases</a></li>
+                <li><a href="index.html#news">Reports</a></li>
+              </ul>
+            </li>
+            <li class="nav-item has-dropdown">
+              <a href="index.html#action">Take Action</a>
+              <ul class="dropdown">
+                <li><a href="index.html#action">Volunteer</a></li>
+                <li><a href="index.html#action">Sign Up</a></li>
+                <li><a href="donate.html">Donate</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="navbar__cta">
+          <a href="index.html" class="btn btn--outline">← Back Home</a>
+          <a href="index.html#action" class="btn btn--primary">Join Us</a>
+        </div>
+
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- ===== DONATE HERO ===== -->
+    <div style="background: var(--color-bg); overflow: hidden">
+      <section class="donate-hero">
+        <div class="donate-hero__bg"></div>
+        <div class="donate-hero__content">
+          <p class="hero__eyebrow">Support Our Mission</p>
+          <h1 class="donate-hero__heading">
+            Your gift<br />
+            <span>fuels the fight.</span>
+          </h1>
+          <p class="donate-hero__sub">
+            Every dollar you give goes directly toward building power in
+            communities that need it most — funding advocacy, organizing, and
+            the people who make change happen.
+          </p>
+        </div>
+      </section>
+    </div>
+
+    <!-- ===== IMPACT STATS ===== -->
+    <section class="impact">
+      <div class="container impact__grid">
+        <div class="impact__stat">
+          <span class="impact__number">40+</span>
+          <span class="impact__label">Partner Organizations</span>
+        </div>
+        <div class="impact__stat">
+          <span class="impact__number">29</span>
+          <span class="impact__label">States Reached</span>
+        </div>
+        <div class="impact__stat">
+          <span class="impact__number">1M+</span>
+          <span class="impact__label">Community Members</span>
+        </div>
+        <div class="impact__stat">
+          <span class="impact__number">50+</span>
+          <span class="impact__label">Years of Impact</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== MAIN DONATE SECTION ===== -->
+    <section class="donate-main">
+      <div class="container donate-main__inner">
+        <!-- Left: Form -->
+        <div class="donate-form-wrap">
+          <p class="label">Make a Donation</p>
+          <h2>Choose your impact</h2>
+
+          <!-- Frequency toggle -->
+          <div class="donate-frequency">
+            <button class="freq-btn active" data-freq="monthly">Monthly</button>
+            <button class="freq-btn" data-freq="once">One-Time</button>
+          </div>
+
+          <!-- Amount selector -->
+          <div class="donate-amounts">
+            <button class="amount-btn" data-amount="10">$10</button>
+            <button class="amount-btn active" data-amount="25">$25</button>
+            <button class="amount-btn" data-amount="50">$50</button>
+            <button class="amount-btn" data-amount="100">$100</button>
+            <button class="amount-btn" data-amount="250">$250</button>
+            <div class="amount-custom">
+              <span>$</span>
+              <input
+                type="number"
+                id="customAmount"
+                placeholder="Other amount"
+                min="1"
+              />
+            </div>
+          </div>
+
+          <!-- Impact message -->
+          <div class="donate-impact-msg" id="impactMsg">
+            <span class="donate-impact-msg__icon">💙</span>
+            <p id="impactText">
+              $25/month funds community organizing materials for one advocate
+              for an entire year.
+            </p>
+          </div>
+
+          <!-- Donor info -->
+          <div class="donate-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" placeholder="Jane" />
+              </div>
+              <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" placeholder="Doe" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" placeholder="jane@example.com" />
+            </div>
+
+            <!-- Payment placeholder -->
+            <div class="payment-placeholder">
+              <div class="payment-placeholder__inner">
+                <span class="payment-placeholder__icon">💳</span>
+                <p>Payment processor will be embedded here</p>
+                <p class="payment-placeholder__note">
+                  e.g. Donorbox, Stripe, PayPal Giving Fund
+                </p>
+              </div>
+            </div>
+
+            <button
+              class="btn btn--primary btn--lg donate-submit"
+              id="donateSubmit"
+            >
+              Donate $25 / month
+            </button>
+
+            <p class="donate-secure">
+              🔒 Secure &amp; encrypted. DAPH is a registered 501(c)(3)
+              nonprofit. Your donation may be tax-deductible.
+            </p>
+          </div>
+        </div>
+
+        <!-- Right: Why give -->
+        <div class="donate-why">
+          <p class="label">Why Give</p>
+          <h3>Where your money goes</h3>
+
+          <div class="donate-why__bars">
+            <div class="donate-why__bar-item">
+              <div class="donate-why__bar-label">
+                <span>Community Organizing</span>
+                <span>52%</span>
+              </div>
+              <div class="donate-why__bar-track">
+                <div
+                  class="donate-why__bar-fill"
+                  style="width: 52%; background: var(--color-primary)"
+                ></div>
+              </div>
+            </div>
+            <div class="donate-why__bar-item">
+              <div class="donate-why__bar-label">
+                <span>Health &amp; Housing Advocacy</span>
+                <span>28%</span>
+              </div>
+              <div class="donate-why__bar-track">
+                <div
+                  class="donate-why__bar-fill"
+                  style="width: 28%; background: var(--color-accent)"
+                ></div>
+              </div>
+            </div>
+            <div class="donate-why__bar-item">
+              <div class="donate-why__bar-label">
+                <span>Training &amp; Leadership</span>
+                <span>13%</span>
+              </div>
+              <div class="donate-why__bar-track">
+                <div
+                  class="donate-why__bar-fill"
+                  style="width: 13%; background: #4a9eff"
+                ></div>
+              </div>
+            </div>
+            <div class="donate-why__bar-item">
+              <div class="donate-why__bar-label">
+                <span>Operations</span>
+                <span>7%</span>
+              </div>
+              <div class="donate-why__bar-track">
+                <div
+                  class="donate-why__bar-fill"
+                  style="width: 7%; background: var(--color-muted)"
+                ></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="donate-testimonial">
+            <blockquote>
+              "DAPH helped our community fight back against unjust housing
+              policies. Their organizers showed us we have real power when we
+              stand together."
+            </blockquote>
+            <cite>— Maria R., community member since 2019</cite>
+          </div>
+
+          <div class="donate-other-ways">
+            <h4>Other ways to give</h4>
+            <ul>
+              <li>
+                <span class="donate-other-ways__icon">✉️</span>
+                <div>
+                  <strong>By Mail</strong>
+                  <p>
+                    Send a check payable to DAPH<br />65 Country Club Rd<br />New
+                    Jersey, 08831
+                  </p>
+                </div>
+              </li>
+              <li>
+                <span class="donate-other-ways__icon">🏢</span>
+                <div>
+                  <strong>Employer Match</strong>
+                  <p>
+                    Many employers will match your donation — double your impact
+                    at no extra cost.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <span class="donate-other-ways__icon">📜</span>
+                <div>
+                  <strong>Planned Giving</strong>
+                  <p>
+                    Leave a legacy by including DAPH in your estate planning.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer" id="contact">
+      <div class="container footer__inner">
+        <div class="footer__brand">
+          <a href="index.html" class="footer__logo">DAPH</a>
+          <p>
+            DAPH builds the power of people with disabilities and
+            under-resourced communities to win change through issue campaigns
+            and elections.
+          </p>
+          <div class="footer__socials">
+            <a href="#" aria-label="Twitter">𝕏</a>
+            <a href="#" aria-label="Instagram">📷</a>
+            <a href="#" aria-label="Facebook">f</a>
+          </div>
+        </div>
+        <div class="footer__col">
+          <h4>About</h4>
+          <ul>
+            <li><a href="index.html#about">Who We Are</a></li>
+            <li><a href="index.html#about">Our History</a></li>
+            <li><a href="index.html#about">Board of Directors</a></li>
+            <li><a href="index.html#contact">Careers</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Our Work</h4>
+          <ul>
+            <li><a href="index.html#work">Programs</a></li>
+            <li><a href="index.html#work">Campaigns</a></li>
+            <li><a href="index.html#work">Initiatives</a></li>
+            <li><a href="index.html#work">Projects</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="index.html#news">Latest Updates</a></li>
+            <li><a href="index.html#news">Press Releases</a></li>
+            <li><a href="index.html#news">In The News</a></li>
+            <li><a href="index.html#news">Reports</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Take Action</h4>
+          <ul>
+            <li><a href="index.html#action">Volunteer</a></li>
+            <li><a href="donate.html">Donate</a></li>
+            <li><a href="index.html#action">Sign Up</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="container footer__bottom-inner">
+          <p>©2026 DAPH — Disability Advocacy &amp; Public Health</p>
+          <div class="footer__legal">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms</a>
+            <a href="#">Financials</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/donate.js"></script>
+  </body>
+</html>
